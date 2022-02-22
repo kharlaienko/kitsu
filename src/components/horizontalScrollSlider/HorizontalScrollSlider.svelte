@@ -13,11 +13,11 @@
    });
 
    function changeBorderShadow() {
-      const isScrollFromLeftMoreThenZero = slider.scrollLeft > 0;
-      const isScrolledTillEnd = slider.scrollWidth / 2 < slider.scrollLeft;
+      const isStartScrolling = slider.scrollLeft > 0;
+      const isScrolledTillEnd =
+         slider.scrollWidth - slider.offsetWidth != 0 && slider.scrollWidth - slider.offsetWidth === slider.scrollLeft;
 
-      showLeftBorderShadow = isScrollFromLeftMoreThenZero;
-
+      showLeftBorderShadow = isStartScrolling;
       showRightBorderShadow = !isScrolledTillEnd;
    }
 </script>
