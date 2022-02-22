@@ -4,6 +4,7 @@
    $: showLeftBorderShadow = true;
    $: showRightBorderShadow = false;
    export let isItemsExist;
+   export let title = '';
 
    let slider;
 
@@ -21,6 +22,12 @@
       showRightBorderShadow = !isScrolledTillEnd;
    }
 </script>
+
+{#if title}
+   <h3 class="text-xl uppercase mb-2 text-shadow">
+      {title}
+   </h3>
+{/if}
 
 <div class="relative">
    {#if showLeftBorderShadow && isItemsExist}
