@@ -1,7 +1,7 @@
 <script>
    import { Router, Route } from 'svelte-navigator';
    import Home from './routes/Home.svelte';
-   import About from './routes/About.svelte';
+   import Detail from './routes/Detail.svelte';
    import Menu from './components/base/Menu.svelte';
 </script>
 
@@ -11,8 +11,7 @@
       <div class="mt-5 h-full flex flex-col overflow-y-auto">
          <div class="p-2">
             <Route path="/" component={Home} />
-            <Route path="about" component={About} />
-            <Route path="explore/:slug" component={About} />
+            <Route path="/:slug" component={Detail} />
          </div>
       </div>
    </Router>

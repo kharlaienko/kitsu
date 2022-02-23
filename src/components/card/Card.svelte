@@ -12,7 +12,7 @@
    $: startYear = startDate.slice(0, 4);
 </script>
 
-<div class=" bg-red-800 w-full h-auto relative rounded-lg shadow-md shadow-slate-700 sm:w-48 shrink-0">
+<div class=" bg-slate-600 h-auto relative rounded-lg shadow-md shadow-slate-700 w-48 shrink-0">
    <div class="max-w-full h-full rounded-lg">
       <img class="w-full h-full object-cover rounded-lg" src={img} alt={title} />
    </div>
