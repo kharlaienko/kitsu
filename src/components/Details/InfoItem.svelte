@@ -4,7 +4,7 @@
 </script>
 
 <div class="flex gap-x-5">
-   <p class="w-1/2">{name}</p>
+   <p class="w-1/3">{name}</p>
    <div>
       <p>{value}</p>
       <slot />
